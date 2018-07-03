@@ -8,7 +8,7 @@ Import the db.sql file, change the params in the config/Database.php file to you
 
 ## App Info
 Author
-Rajdeep Das [Website](https://www.rajdeep-das.github.io)
+Rajdeep Das [Website](https://rajdeep-das.github.io)
 
 Version
 1.0.0
