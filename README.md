@@ -1,6 +1,6 @@
 # Campus Notice
-> E-Notice  App and Back-end for all  academic organization or Institute for implementation e-notice capabilities
-> PHP REST API
+> E-Notice  App and Back-end for all  academic organization or Institute for implementation e-notice capabilities.
+> Using PHP REST API.
 > This is a simple PHP REST API from scratch with no framework.
 
 ## Quick Start
