@@ -16,5 +16,5 @@ Rajdeep Das [Website](https://rajdeep-das.github.io)
 Version
 1.0.0
 
-License
+### License
 This project is licensed under the MIT License
