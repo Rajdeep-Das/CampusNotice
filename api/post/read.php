@@ -31,6 +31,7 @@ if($num >0){
             'id' => $id,
             'notice'=>$notice,
             'dept'=>$dept,
+            'year' =>$year,
             'postby'=>$postby,
             'datetime'=>$datetime
         );

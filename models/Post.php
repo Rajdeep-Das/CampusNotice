@@ -10,6 +10,7 @@
         public $dept;
         public $postby;
         public $datetime;
+        public $year;
 
         //constructor with DB
         public function __construct($db) {
@@ -23,6 +24,7 @@
                    p.id,
                    p.notice,
                    p.dept,
+                   p.year,
                    p.postby,
                    p.datetime
                 FROM
@@ -39,6 +41,45 @@
 
             return $stmt;
             
+        }
+
+        //Get Single Post
+        public function read_single()
+        {
+             //create query
+             $query = 'SELECT
+             p.id,
+             p.notice,
+             p.dept,
+             p.year,
+             p.postby,
+             p.datetime
+          FROM
+            ' . $this->table . ' p
+          WHERE
+          p.id = ? 
+          LIMIT 0,1' ;
+
+          // Prepare Statement
+          $stmt = $this->conn->prepare($query);
+
+          //Bind id
+          $stmt->bindParam(1,$this->id);
+         
+           // Execute
+           $stmt->execute();
+
+           $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+           //Set Properties
+          
+           $this->notice=$row['notice'];
+           $this->dept=$row['dept'];
+           $this->postby=$row['postby'];
+           $this->year=$row['year'];
+           $this->datetime=$row['datetime'];
+           
+
         }
 
     }
