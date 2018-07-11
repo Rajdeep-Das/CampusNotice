@@ -16,5 +16,12 @@ Rajdeep Das [Website](https://rajdeep-das.github.io)
 Version
 1.0.0
 
+## Sever info
+1. IP : 
+2. DBNAME:
+3. URL:
+
+
+
 ### License
 This project is licensed under the MIT License
